@@ -21,8 +21,10 @@ void draw(){
   ellipse(200, 170, 150, 150);    // face
 
   fill(0, 0, 0);
-  ellipse(170, 150, eyeSize, eyeSize);  // left eye
-  ellipse(230, 150, eyeSize, eyeSize);  // right eye
+  ellipse(170, 150, 15, 15);  // left eye
+  ellipse(230, 150, 15, 15);  // right eye
+  
+  
 
   line(150, 200, 250, 200);   // mouth
 
@@ -50,7 +52,8 @@ void mousePressed(){
   var myText = "x: " + mouseX + "\ny: " + mouseY;
   text(myText, mouseX + 15, mouseY);
   console.log(myText);
-  
+   
+  eyeSize = eyeSize + 1;
   
 }
 
